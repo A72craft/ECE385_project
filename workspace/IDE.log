@@ -1,0 +1,5 @@
+14:24:14 DEBUG : Logs will be stored at 'E:/ECE385/ECE385_project/workspace/IDE.log'.
+14:24:16 INFO  : Platform repository initialization has completed.
+14:24:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\ECE385\ECE385_project\workspace\temp_xsdb_launch_script.tcl
+14:24:16 INFO  : Registering command handlers for Vitis TCF services
+14:24:18 INFO  : XSCT server has started successfully.
