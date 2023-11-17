@@ -7,19 +7,18 @@
 #include "macros.h"
 
 
-class Enemie {
+class enemie {
 private:
-    //the game board size is 28*36, and the x and y below is referring to that
-    int grid_x;
-    int grid_y;
+    int x;
+    int y;
     bool isActive;
     int modes; //Chase, Scatter, or Frightened for 0,1,2
 public:
-    Enemie() : grid_x(0), grid_y(0), isActive(false), modes(0) {}
-    Enemie(int x, int y) : grid_x(x), grid_y(y), isActive(false), modes(0) {}
+    enemie() : x(0), y(0), isActive(false), modes(0) {}
+    enemie(int x, int y) : x(x), y(y), isActive(false), modes(0) {}
 
-    int getX() const { return grid_x; }
-    int getY() const { return grid_y; }
+    int getX() const { return x; }
+    int getY() const { return y; }
     bool getIsActive() const { return isActive; }
     int getMode() const { return modes; }   
 
@@ -28,7 +27,7 @@ public:
     virtual void update() = 0;
 };
 
-class blinky: public Enemie{
+class blinky: public enemie{
 public:
     blinky();
     blinky(int x, int y);
@@ -38,22 +37,34 @@ public:
     void update() override;
 };
 
-class pinky: public Enemie{
+class pinky: public enemie{
 public:
     pinky();
     pinky(int x, int y);
+
+    void move() override;
+    void switchMode() override;
+    void update() override;
 };
 
-class inky: public Enemie{
+class inky: public enemie{
 public:
     inky();
     inky(int x, int y);
+
+    void move() override;
+    void switchMode() override;
+    void update() override;
 };
 
-class clyde: public Enemie{
+class clyde: public enemie{
 public:
     clyde();
     clyde(int x, int y);
+
+    void move() override;
+    void switchMode() override;
+    void update() override;
 };
 
 #endif

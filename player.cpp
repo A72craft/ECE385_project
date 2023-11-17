@@ -4,7 +4,7 @@
  * @brief Construct a new Pacman:: Pacman object
  * 
  */
-Pacman::Pacman() :grid_x(0),grid_y(0),curr_dir(LEFT),health(2){}
+Pacman::Pacman() :x(0),y(0),curr_dir(LEFT){}
 
 /**
  * @brief Construct a new Pacman:: Pacman object(with customized inputs)
@@ -13,11 +13,10 @@ Pacman::Pacman() :grid_x(0),grid_y(0),curr_dir(LEFT),health(2){}
  * @param y the y grid location
  * @param health the amount of health to start with
  */
-Pacman::Pacman(int x,int y,int health) :grid_x(x),grid_y(y),curr_dir(LEFT),health(health){}
+Pacman::Pacman(int x,int y) :x(x),y(y),curr_dir(LEFT){}
 
-int Pacman::getX(){return grid_x;}
-int Pacman::getY(){return grid_y;}
+int Pacman::getX(){return x;}
+int Pacman::getY(){return y;}
 int Pacman::getCurrDir(){return curr_dir;}
-int Pacman::getHealth(){return health;}
 
 void Pacman::setDirection(int direction){curr_dir = direction;}

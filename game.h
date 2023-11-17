@@ -6,10 +6,20 @@
 
 class Game {
 private:
-    Pacman player;
+    Pacman pacman;
+    blinky red;
+    pinky pink;
+    inky blue;
+    clyde orange;
+    int health;
+    int points;
 
 public:
     Game();
+    ~Game();
+
     void update();  // Function to update game state
+    void ifEaten();
+
 };
 #endif

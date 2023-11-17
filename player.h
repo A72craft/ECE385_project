@@ -13,18 +13,16 @@ Make the map change and state reset when on a new level
 
 class Pacman {
 private:
-    int grid_x;
-    int grid_y;
+    int x;
+    int y;
     int curr_dir;
-    int health;
 public:
     Pacman();
-    Pacman(int x,int y,int health);
+    Pacman(int x,int y);
 
     int getX();
     int getY();
     int getCurrDir();
-    int getHealth();
 
     void setDirection(int direction);
 };
