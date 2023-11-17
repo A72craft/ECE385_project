@@ -20,3 +20,9 @@ int Pacman::getY(){return y;}
 int Pacman::getCurrDir(){return curr_dir;}
 
 void Pacman::setDirection(int direction){curr_dir = direction;}
+
+void Pacman::resetPosition(){
+    x = PACMAN_X;
+    y = PACMAN_Y;
+    curr_dir = LEFT;
+}

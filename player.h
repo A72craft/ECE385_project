@@ -25,4 +25,5 @@ public:
     int getCurrDir();
 
     void setDirection(int direction);
+    void resetPosition();
 };

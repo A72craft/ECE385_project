@@ -13,6 +13,7 @@ private:
     clyde orange;
     int health;
     int points;
+    int power;
 
 public:
     Game();
@@ -20,6 +21,6 @@ public:
 
     void update();  // Function to update game state
     void ifEaten();
-
+    void semiReset(); //used when one health is lost
 };
 #endif
