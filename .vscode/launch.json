@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Jin/Desktop/project/ECE385_project",
-      "program": "c:/Users/Jin/Desktop/project/ECE385_project/build/Debug/outDebug",
+      "cwd": "e:/ECE385/ECE385_project",
+      "program": "e:/ECE385/ECE385_project/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -26,4 +26,5 @@ public:
 
     void setDirection(int direction);
     void move(int distance);
+    void resetPosition();
 };

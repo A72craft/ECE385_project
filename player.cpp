@@ -23,3 +23,8 @@ void Pacman::setDirection(int direction){curr_dir = direction;}
 
 void Pacman::move(int distance){
 }
+void Pacman::resetPosition(){
+    x = PACMAN_X;
+    y = PACMAN_Y;
+    curr_dir = LEFT;
+}
