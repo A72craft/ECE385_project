@@ -20,6 +20,7 @@ public:
 
     void update();  // Function to update game state
     void ifEaten();
+    void ifPoints();
 
 };
 #endif

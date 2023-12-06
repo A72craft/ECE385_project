@@ -20,3 +20,6 @@ int Pacman::getY(){return y;}
 int Pacman::getCurrDir(){return curr_dir;}
 
 void Pacman::setDirection(int direction){curr_dir = direction;}
+
+void Pacman::move(int distance){
+}

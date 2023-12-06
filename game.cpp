@@ -31,6 +31,12 @@ void Game::ifEaten(){
 void Game::update(){
     //check if a player or enemie is eaten
     ifEaten();
+    ifPoints();
+    
+}
+
+void Game::ifPoints(){
+    
 }
 /**
  * @brief the main enterance of the program
